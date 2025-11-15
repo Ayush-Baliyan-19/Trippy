@@ -27,6 +27,9 @@ out/
 build
 dist
 
+# Go
+.go-cache/
+
 
 # Debug
 npm-debug.log*

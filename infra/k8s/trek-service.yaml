@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trek-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: trek-service
+  template:
+    metadata:
+      labels:
+        app: trek-service
+    spec:
+      containers:
+        - name: trek-service
+          image: trippy/trek-service:latest
+          ports:
+            - containerPort: 8001

@@ -1,0 +1,6 @@
+{
+  "name": "apigateway",
+  "scripts": {
+    "dev": "node scripts/dev.js"
+  }
+}

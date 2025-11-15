@@ -1,0 +1,6 @@
+{
+  "name": "user-service",
+  "scripts": {
+    "dev": "node scripts/dev.js"
+  }
+}

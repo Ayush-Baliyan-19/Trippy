@@ -1,0 +1,6 @@
+{
+  "name": "match-service",
+  "scripts": {
+    "dev": "node scripts/dev.js"
+  }
+}

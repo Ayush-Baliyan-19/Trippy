@@ -1,0 +1,24 @@
+services:
+  apigateway:
+    build: ./apps/apigateway
+    ports:
+      - "8000:8000"
+    depends_on:
+      - trek-service
+      - user-service
+      - match-service
+
+  trek-service:
+    build: ./apps/trek-service
+    ports:
+      - "8001:8001"
+
+  user-service:
+    build: ./apps/user-service
+    ports:
+      - "8002:8002"
+
+  match-service:
+    build: ./apps/match-service
+    ports:
+      - "8003:8003"
